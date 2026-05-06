@@ -45,7 +45,7 @@ def update_github(proxy=None):
             cmd = 'export {k}_proxy={v}'.format(k=k, v=v)
             ret = os.system(cmd)
             print(ret, cmd)
-    ts = get_special_date(format="%Y-%m-%d %H:%m:%S")@
+    ts = get_special_date(format="%Y-%m-%d %H:%m:%S")
     cmd = "git add . && git commit -m '%s' && git push origin main" % (ts)
 
     ret = os.system(cmd)
